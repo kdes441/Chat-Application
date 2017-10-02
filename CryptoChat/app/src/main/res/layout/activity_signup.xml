@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.cryptochat.theguys.cryptochat.Controller.SignUpActivity">
+
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textAllCaps="false"
+        android:textColor="@color/secondary_text"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:id="@+id/register_form"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_fName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/placeholder_first_name"
+                android:inputType="textPersonName"
+                android:maxLength="25"
+                android:textColor="@color/secondary_text"
+                android:textColorHint="@color/secondary_text" />
+
+            <EditText
+                android:id="@+id/edit_lName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/placeholder_last_name"
+                android:inputType="textPersonName"
+                android:maxLength="25"
+                android:textColor="@color/secondary_text"
+                android:textColorHint="@color/secondary_text" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="@string/placeholder_email"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:textColor="@color/secondary_text"
+            android:textColorHint="@color/secondary_text" />
+
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="@string/placeholder_username"
+            android:inputType="textPersonName"
+            android:maxLength="25"
+            android:textColor="@color/secondary_text"
+            android:textColorHint="@color/secondary_text" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/placeholder_password"
+            android:inputType="textPassword"
+            android:maxLength="25"
+            android:textColor="@color/secondary_text"
+            android:textColorHint="@color/secondary_text" />
+
+        <EditText
+            android:id="@+id/edit_passwordConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/placeholder_password_confirm"
+            android:inputType="textPassword"
+            android:maxLength="25"
+            android:textColor="@color/secondary_text"
+            android:textColorHint="@color/secondary_text" />
+
+        <Button
+            android:id="@+id/button_registers"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/white_button_no_border"
+            android:onClick="registerAction"
+            android:text="@string/placeholder_register"
+            android:textColor="@color/secondary_text" />
+
+        <TextView
+            android:id="@+id/text_tos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="By registering you accept the Terms and Conditions of Crypto Chat"
+            android:textColor="@color/secondary_text"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</RelativeLayout>
